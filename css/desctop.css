@@ -1,0 +1,624 @@
+/* All */
+* {
+  color: #fff;
+  font-family: "Jost", sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+/* Flex */
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* center */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ------------------Header Start------------------------- */
+header {
+  background: #004274;
+}
+
+nav {
+  justify-content: space-between;
+}
+#nav-menu {
+  gap: 40px;
+}
+
+#menu {
+  gap: 30px;
+  height: 100%;
+}
+#menu li {
+  padding: 30px 0;
+  width: 50px;
+}
+#menu li a,
+#down li {
+  font-size: 1.1rem;
+}
+#menu li:hover a,
+#down li:hover {
+  color: #0d6efd;
+  cursor: pointer;
+}
+#menu > * {
+  position: relative;
+}
+
+#menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s;
+  background: #0d6efd;
+  width: 0;
+  height: 4px;
+}
+#menu li:hover::after {
+  width: 100%;
+}
+#nav-contact {
+  gap: 18px;
+}
+#call {
+  display: inline-block;
+  padding: 6px 0;
+  border-bottom: 1px dotted #fff;
+}
+
+#drop {
+  position: relative;
+}
+#down::after {
+  content: "";
+  color: transparent !important;
+}
+
+#down {
+  display: none;
+  position: absolute;
+  width: 160px;
+  background-color: #f9efef;
+  margin: 30px 0 !important;
+  padding: 10px;
+  z-index: 4;
+}
+#drop:hover #down {
+  display: block;
+}
+#down li {
+  color: #333;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+#down li::after {
+  content: "";
+  background: none;
+}
+#nav-contact a {
+  font-size: 1.1rem;
+  padding: 14px 25px;
+  background: #00aeff;
+  border-radius: 4px;
+  border: 1px solid #00aeff;
+  transition: all 0.3s;
+}
+#nav-contact a:hover {
+  background: transparent;
+  color: #00aeff;
+}
+.call > * {
+  margin-right: 4px;
+}
+#mobil-nav {
+  display: none;
+}
+/* ------------------Header End------------------------- */
+
+/* ------------------Inps Start------------------------- */
+#inps {
+  background: #fff;
+  margin-top: 8px;
+  padding: 20px 100px;
+}
+
+#inps input,
+#select select {
+  border: 1px solid #333;
+}
+
+#inps,
+input,
+select,
+a {
+  font-size: 1rem;
+}
+#enter {
+  position: relative;
+  min-width: 450px;
+}
+#inps input,
+#inps select,
+#select select {
+  padding: 15px;
+}
+#inps * {
+  border-radius: 8px;
+  outline: none;
+}
+#enter input {
+  min-width: 430px;
+  padding: 15px 35px;
+  margin-right: 20px;
+}
+#enter .fa-magnifying-glass {
+  position: absolute;
+  color: #333;
+  top: 16px;
+  left: 8px;
+}
+#select select,
+#inps select,
+option {
+  color: #333;
+}
+
+#sel-first {
+  background: #00aeff;
+}
+#bath {
+  width: 90px;
+  margin-left: 10px;
+}
+
+#top-btn {
+  margin-left: 8px;
+}
+
+#top-btn a {
+  padding: 15px 30px;
+  background: #004274;
+}
+
+/* ------------------Inps End------------------------- */
+
+/* ------------------Main Start------------------------- */
+main {
+  max-height: 100vh;
+  background: url("../img/h1_hero1.jpg.webp") center/cover;
+}
+main #main-content {
+  padding: 28px;
+  max-width: 630px;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main #main-content span {
+  font-size: 1.1em;
+}
+
+main #main-content h1 {
+  font-size: 3.8em;
+}
+main #main-content p {
+  font-size: 1.3em;
+}
+main #main-content h3 {
+  font-size: 2.5em;
+}
+#btn-hover {
+  position: relative;
+  font-size: 18px;
+  width: 170px;
+  background: #00aeff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+#btn-hover::before {
+  overflow: hidden;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #0000ff97;
+  width: 0;
+  height: 100%;
+  transition: all 0.4s;
+}
+#btn-hover:hover::before {
+  width: 100%;
+  animation-name: move;
+  animation-duration: 0.8s;
+}
+
+/* ------------------Main End------------------------- */
+
+/* ------------------Section1 Start------------------------- */
+#sec1 {
+  padding: 100px 0;
+}
+#sec1-content * {
+  color: #333 !important;
+}
+#sec1-top {
+  padding: 40px 0;
+}
+#sec1-top {
+  text-align: center;
+}
+
+#sec1-top h4 {
+  font-size: 2.4em;
+}
+#sec1-top p {
+  color: rgb(101, 101, 101);
+  font-size: 1.1em;
+  font-weight: 300;
+  max-width: 560px;
+  margin: auto;
+}
+
+.card .card-main,
+.card .card-footer {
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+.card .card-main {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+#sec1 .card .card-main span {
+  color: #00aeff !important;
+  font-size: 1rem !important;
+}
+#sec1 .card {
+  overflow: hidden;
+}
+#sec1 .card img:hover {
+  scale: 1.01;
+}
+#sec1 .card .card-main h5 {
+  color: #071112 !important;
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+}
+#sec1 .card .card-main p {
+  color: #5e5e5e !important;
+  font-size: 1em !important;
+}
+#sec1 .card .card-footer span {
+  margin: 0 4px;
+  color: #192839 !important;
+}
+#sec1 .card .card-footer span i {
+  color: #819cb8 !important;
+}
+.owl-prev {
+  position: absolute;
+  left: -21px;
+  top: 210px;
+  font-size: 40px !important;
+}
+.owl-next {
+  position: absolute;
+  top: 210px;
+  right: -20px;
+  font-size: 40px !important;
+}
+/* ------------------Section1 End------------------------- */
+
+/* ------------------Section2 Start------------------------- */
+
+#sec2 {
+  text-align: center;
+  background: url("../img/section-bg1.jpg.webp") center/cover;
+  padding: 60px 120px;
+}
+#sec2-content h4 {
+  font-size: 3em;
+}
+#sec2 #boxes {
+  justify-content: center;
+}
+#sec2 #boxes {
+  margin-top: 30px;
+}
+#sec2 #boxes .box {
+  width: 480px;
+  background: #00a0eb;
+  padding: 50px 30px 39px;
+}
+#sec2 #boxes .box > * {
+  margin: 10px 0;
+}
+#sec2 #boxes .box img {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#sec2 #boxes .box2 {
+  box-shadow: 0 0 2px #333;
+}
+/* ------------------Section2 End------------------------- */
+
+/* ------------------Section3 Start------------------------- */
+
+#sec3 {
+  background: #f2f4f8;
+  min-height: 70vh;
+  padding: 80px 0;
+}
+#sec3-row {
+  min-height: 70vh;
+  margin-right: 20px;
+}
+#sec3-row .col-4 {
+  padding: 20px 30px;
+  max-width: 356px;
+}
+#sec3-row .col-4 h4 {
+  font-size: 2.5em;
+  color: #192839;
+}
+
+#sec3-row .col-4 p {
+  font-size: 1.1em;
+  color: #656565;
+}
+
+#sec3-row .col-4 > * {
+  margin: 20px 0;
+}
+
+.col-card img {
+  display: block;
+  margin: 20px auto;
+}
+#sec3 .col-4 #btn-hover {
+  overflow: hidden !important;
+  transition: all 0.4s;
+  top: 40px;
+}
+#sec3 .col-8 .col-card {
+  min-width: 180px;
+  background-color: #fffefe;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+#sec3 .col-8 .col-card::after {
+  content: "";
+  background: #f2f4f87c;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+}
+#sec3 .col-8 .col-card:hover::after {
+  height: 100%;
+  animation-name: up;
+  animation-duration: 0.4s;
+}
+#sec3 .col-8 .col-card:hover a {
+  color: #00aeff !important;
+  border-bottom: 1px solid #00aeff !important;
+}
+#sec3 .col-8 .col-card a {
+  color: #192839 !important;
+}
+/* ------------------Section3 End------------------------- */
+
+/* ------------------Section4 Start------------------------- */
+
+.owl-item {
+  width: 100%;
+  margin-right: 0px !important;
+}
+#sec4-content .card {
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+#sec4-content .icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#sec4-content .icon {
+  display: inline-block;
+  margin: 0 4px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+#sec4-content .icon span{
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  background: blue;
+}
+
+/* #sec4-content .card:hover .icon span i{
+  transition: all 3s !important;
+} */
+
+#sec4-content .card:hover .icons {
+  bottom: 30%;
+  display: block;
+  animation-name: icon;
+  animation-duration: .4s;
+}
+
+#sec4-content .icon:hover {
+  transform: scale(1.2);
+}
+
+#sec4-content .card img:hover {
+  transition: all 0.4s;
+  scale: 1.05;
+}
+
+#sec4-content .card-bottom {
+  text-align: center;
+  padding: 20px 10px;
+}
+#sec4-content .card-bottom a {
+  color: #33387e;
+  font-size: 1.4em;
+}
+#sec4-content .card-bottom p {
+  color: #57667e;
+}
+/* ------------------Section4 End------------------------- */
+
+/* ------------------Section5 Start------------------------- */
+
+#sec5,
+#sec5 .col-6,
+#col-6 {
+  height: 73vh !important;
+}
+
+#sec5-content .col-6 {
+  width: 600px;
+  background: #004274;
+  padding: 60px;
+}
+#sec5-content .col-6 h4 {
+  font-size: 2.4em;
+  font-weight: 600;
+}
+#sec5-content .col-6 p {
+  font-size: 1.1em;
+  max-width: 500px;
+  margin: 20px 0;
+}
+#sec5-content .col-6 input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8px;
+  display: block;
+}
+#sec5-content .col-6 a {
+  display: inline-block;
+  background: #00aeff;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+#sec5-content #col-6 {
+  width: 100%;
+  background: url("../img/subscribe-img.jpg.webp") center/cover;
+}
+/* ------------------Section5 End------------------------- */
+
+/* ------------------Footer Start------------------------- */
+
+footer {
+  padding: 80px;
+  margin-top: 50px;
+}
+.footer-content p {
+  color: #5e5e5e !important;
+}
+.footer-content .first {
+  margin-right: 40px;
+}
+
+.footer-content .f-icons i {
+  color: #333;
+  letter-spacing: 8px;
+}
+.footer-content .f-icons i:hover {
+  transform: rotate(180deg);
+}
+.footer-content .col {
+  width: 220px !important;
+  height: 300px;
+}
+.footer-content .col h4 {
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.footer-content .col a {
+  display: inline-block;
+  margin: 5px 0;
+  color: #5e5e5e;
+}
+.footer-content .col .contact{
+  border-bottom: 1px solid;
+}
+.footer-content .col .color{
+  font-size: 22px;
+  color: #004274;
+  font-weight: 600;
+}
+/* ------------------Footer End------------------------- */
+
+/* Icons Keyframe */
+
+@keyframes icon {
+  0% {
+    bottom: 0;
+    transition: 0;
+  }
+  50%{
+    bottom: 25%;
+    transition: .3s;
+  }
+  100% {
+    bottom: 30%;
+    transition: 4s;
+  }
+}
+
+/* Main Keyframes */
+
+@keyframes move {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Section3 Keyframes */
+@keyframes up {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
